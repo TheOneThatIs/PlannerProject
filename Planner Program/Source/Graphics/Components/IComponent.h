@@ -6,6 +6,6 @@
 class IComponent : public IRenderable {
 
 public:
-	IComponent();
-	void loadFromFile(std::string filepath);
+	IComponent(){}
+	void loadFromFile(std::string filepath){}
 };

@@ -4,11 +4,12 @@
 
 Board::Board(int width, int height, std::string name) : window(sf::VideoMode(1080, 720), "Planner") {
 	ImageComponent imageComp("Resources/Textures/TestImage.png", 500, 200);
-	components.push_back(imageComp);
+	components.push_back(new ImageComponent("Resources/Textures/TestImage.png", 500, 200));
+	components.back()->getFilepath();
 }
 
 void Board::render() {
-	std::cout << "Rendering!" << std::endl;
+	
 }
 
 void Board::update() {

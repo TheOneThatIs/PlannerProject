@@ -164,8 +164,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\Graphics\Components\ImageComponent.cpp" />
-    <ClCompile Include="Source\Graphics\IRenderable.cpp" />
-    <ClCompile Include="Source\Graphics\Components\IComponent.cpp" />
     <ClCompile Include="Source\Application.cpp" />
     <ClCompile Include="Source\Board.cpp" />
     <ClCompile Include="Source\Graphics\Renderer.h" />

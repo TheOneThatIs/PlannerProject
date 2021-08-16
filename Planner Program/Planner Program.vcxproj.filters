@@ -24,13 +24,7 @@
     <ClCompile Include="Source\Graphics\Renderer.h">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Graphics\IRenderable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Graphics\Components\ImageComponent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Graphics\Components\IComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
