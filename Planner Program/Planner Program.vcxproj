@@ -163,15 +163,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Graphics\Components\ImageComponent.cpp" />
     <ClCompile Include="Source\Graphics\IRenderable.cpp" />
-    <ClCompile Include="Source\IComponent.cpp" />
+    <ClCompile Include="Source\Graphics\Components\IComponent.cpp" />
     <ClCompile Include="Source\Application.cpp" />
     <ClCompile Include="Source\Board.cpp" />
     <ClCompile Include="Source\Graphics\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Graphics\Components\ImageComponent.h" />
     <ClInclude Include="Source\Graphics\IRenderable.h" />
-    <ClInclude Include="Source\IComponent.h" />
+    <ClInclude Include="Source\Graphics\Components\IComponent.h" />
     <ClInclude Include="Source\Board.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

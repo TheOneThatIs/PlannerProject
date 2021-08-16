@@ -1,7 +1,8 @@
 #pragma once
 
 class IRenderable {
-	int x, y;
+protected:
+	int x, y, z, globalX, globalY;
 public:
 
 };

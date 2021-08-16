@@ -24,10 +24,13 @@
     <ClCompile Include="Source\Graphics\Renderer.h">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\IComponent.cpp">
+    <ClCompile Include="Source\Graphics\IRenderable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Graphics\IRenderable.cpp">
+    <ClCompile Include="Source\Graphics\Components\ImageComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Components\IComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,10 +38,13 @@
     <ClInclude Include="Source\Board.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\IComponent.h">
+    <ClInclude Include="Source\Graphics\IRenderable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Graphics\IRenderable.h">
+    <ClInclude Include="Source\Graphics\Components\ImageComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Components\IComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
