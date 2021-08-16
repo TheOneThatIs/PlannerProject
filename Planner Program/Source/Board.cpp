@@ -2,14 +2,19 @@
 #include<iostream>
 
 
-Board::Board(int width, int height, std::string name) : window(sf::VideoMode(1080, 720), "Planner") {
-	ImageComponent imageComp("Resources/Textures/TestImage.png", 500, 200);
-	components.push_back(new ImageComponent("Resources/Textures/TestImage.png", 500, 200));
-	components.back()->getFilepath();
+Board::Board(int width, int height, std::string name) : window(sf::VideoMode(width, height), name) {
+	components.emplace_back(std::make_unique<IComponent>(ImageComponent("Resources/Textures/TestImage.png", 500, 200)));
 }
 
 void Board::render() {
+	window.clear();
 	
+	std::cout << "Width =" << components.back()->getSprite()->getTexture()->getSize().x << std::endl;
+	std::cout << "Height = " << components.back()->getSprite()->getTexture()->getSize().y << std::endl;
+
+	//window.draw(*components[0]->getSprite());
+
+	window.display();
 }
 
 void Board::update() {

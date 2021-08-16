@@ -1,13 +1,17 @@
 #include "ImageComponent.h"
+#include<iostream>
 
 
 ImageComponent::ImageComponent(std::string filepath, int x, int y, int z) : filepath("") {
 	this->x = x;
 	this->y = y;
 	this->z = z;
-	this->filepath = filepath;
+
+	if(!texture.loadFromFile(filepath))
+		std::cout << "Could not open file" << std::endl;
+	sprite.setTexture(texture); 
 }
 
-std::string ImageComponent::getFilepath() {
-	return filepath;
+sf::Sprite* ImageComponent::getSprite() {
+	return &sprite;
 }
