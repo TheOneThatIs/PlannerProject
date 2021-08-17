@@ -9,8 +9,8 @@ Board::Board(int width, int height, std::string name) : window(sf::VideoMode(wid
 void Board::render() {
 	window.clear();
 	
-	std::cout << "Width =" << components.back()->getSprite()->getTexture()->getSize().x << std::endl;
-	std::cout << "Height = " << components.back()->getSprite()->getTexture()->getSize().y << std::endl;
+	//std::cout << "Width =" << components.back()->getSprite()->getTexture()->getSize().x << std::endl;
+	//std::cout << "Height = " << components.back()->getSprite()->getTexture()->getSize().y << std::endl;
 
 	//window.draw(*components[0]->getSprite());
 
