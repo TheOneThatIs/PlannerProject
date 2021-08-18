@@ -165,12 +165,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Graphics\Components\ButtonComponent.cpp" />
     <ClCompile Include="Source\Graphics\Components\ImageComponent.cpp" />
     <ClCompile Include="Source\Application.cpp" />
     <ClCompile Include="Source\Board.cpp" />
     <ClCompile Include="Source\Graphics\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Graphics\Components\ButtonComponent.h" />
     <ClInclude Include="Source\Graphics\Components\ImageComponent.h" />
     <ClInclude Include="Source\Graphics\IRenderable.h" />
     <ClInclude Include="Source\Graphics\Components\IComponent.h" />

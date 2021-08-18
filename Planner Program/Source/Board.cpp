@@ -21,6 +21,9 @@ void Board::update() {
 	sf::Event event;
 	while(window.pollEvent(event)) {
 		switch(event.type) {
+			for(int i = 0; i <= components.size(); i++) {
+				components[i]->update();
+			}
 			case sf::Event::Closed:
 				window.close();
 				break;
