@@ -7,7 +7,6 @@ class Base {
 public:
 	Base(){}
 	virtual void print() = 0;
-	virtual void doStuff(){}
 };
 
 class Derived : public Base{
@@ -16,7 +15,6 @@ public:
 	void print() {
 		std::cout << "Derived print" << std::endl;
 	}
-	void doStuff(){}
 };
 
 int main() {
