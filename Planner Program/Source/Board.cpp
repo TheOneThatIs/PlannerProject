@@ -3,14 +3,11 @@
 
 
 Board::Board(int width, int height, std::string name) : window(sf::VideoMode(width, height), name) {
-	components.emplace_back(new ImageComponent("Resources/Textures/TestImage.png", 500, 200));
+	components.emplace_back(new ImageComponent("Resources/Textures/TestImage.png", 10, 200));
 }
 
 void Board::render() {
 	window.clear();
-	
-	std::cout << "Width =" << components.back()->getSprite()->getTexture()->getSize().x << std::endl;
-	std::cout << "Height = " << components.back()->getSprite()->getTexture()->getSize().y << std::endl;
 
 	window.draw(*components[0]->getSprite());
 

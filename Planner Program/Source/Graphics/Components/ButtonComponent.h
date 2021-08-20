@@ -9,6 +9,4 @@ public:
 	ButtonComponent(int width, int height, sf::Color color);
 	ButtonComponent(int width, int height, std::string textureFilepath);
 	ButtonComponent(std::string texPath);
-
-	void update();
 };

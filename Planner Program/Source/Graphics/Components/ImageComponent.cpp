@@ -9,7 +9,8 @@ ImageComponent::ImageComponent(std::string filepath, int x, int y, int z) : file
 
 	if(!texture.loadFromFile(filepath))
 		std::cout << "Could not open file" << std::endl;
-	sprite.setTexture(texture); 
+	sprite.setTexture(texture);
+	sprite.setPosition(x, y);
 }
 
 sf::Sprite* ImageComponent::getSprite() {
